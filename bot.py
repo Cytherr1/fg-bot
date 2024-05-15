@@ -25,8 +25,8 @@ async def send_message(message, user_message, channel, is_private):
 
 
 def run_discord_bot():
-    TOKEN = 'MTA5MTMyMTcxODA0MTIxOTEwMw.GUbtD0.AF7E3ww8cB3mGf3KhhwUz3abN85cgwZChvyBCA'
-    openai.api_key = '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'
+    TOKEN = DISCORD_TOKEN
+    openai.api_key = OPENAI_API_KEY
     intents = discord.Intents.default()
     intents.message_content = True
     client = discord.Client(intents=intents)
